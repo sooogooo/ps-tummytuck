@@ -1,0 +1,16 @@
+# --- 无关内容，不推送 ---
+# _samples 是小耳再造(microtia)样稿，与本腹壁整形系列无关
+_samples/
+
+# --- 本地备份 / 临时文件 ---
+index_backup_*/
+*.bak
+*.tmp
+.DS_Store
+
+# --- Python 缓存 ---
+__pycache__/
+*.pyc
+
+# --- 站点本地备份 css ---
+/tmp/tt_style_backup.css
