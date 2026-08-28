@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+Sitemap: https://tummytuck.amcd.westhospital.net/sitemap.xml

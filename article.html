@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>文章查看器 · 腹壁整形科普系列</title>
+<meta name="description" content="腹壁整形科普系列单篇查看器，支持所有 A/B/C 档内容。" />
+<meta name="theme-color" content="#0a6cb8" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+<link rel="apple-touch-icon" href="assets/img/favicon.png" />
+<link rel="stylesheet" href="assets/style.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="腹壁整形科普系列" />
+  <meta property="og:title" content="腹壁整形科普系列 · 文章查看器" />
+  <meta property="og:description" content="腹壁整形科普系列单篇查看器，支持所有 A/B/C 档内容。" />
+  <meta property="og:image" content="https://tummytuck.amcd.westhospital.net/assets/img/share-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="重庆西区医院医学美容中心 标识" />
+  <meta property="og:url" content="https://tummytuck.amcd.westhospital.net/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://tummytuck.amcd.westhospital.net/assets/img/share-card.png" />
+  <script src="assets/wechat_share.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/img/logo.png" alt="重庆西区医院医学美容中心 标识" width="40" height="40" />
+      <span>
+        <span class="brand__title">重庆西区医院医学美容中心</span><br />
+        <span class="brand__sub">腹壁整形科普系列 · 内部资料</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="a-popular.html">大众科普</a>
+      <a href="b-training.html">业务培训</a>
+      <a href="c-review.html">专业综述</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+
+  <nav class="breadcrumb" aria-label="位置导航" id="breadcrumb"></nav>
+
+  <div class="article-layout" id="article-layout">
+    <aside class="article-aside" id="article-aside" aria-label="目录">
+      <div class="article-aside__sticky">
+        <p class="article-aside__title">本页内容</p>
+        <ol class="toc" id="toc"></ol>
+        <div class="article-aside__actions">
+          <button type="button" class="btn btn--small" id="copy-link-btn" aria-label="复制本页链接">
+            <span aria-hidden="true">连接</span> 复制链接
+          </button>
+          <button type="button" class="btn btn--small" id="print-btn" aria-label="打印本页">
+            <span aria-hidden="true">打印</span> 打印
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <article class="article" id="article-body">
+      <h1 id="article-title">加载中</h1>
+      <p class="article__meta" id="article-meta"></p>
+      <div id="article-content">
+        <p id="article-status">加载中，请稍候。</p>
+        <div class="article-skeleton" aria-hidden="true">
+          <div class="skeleton-line skeleton-line--title"></div>
+          <div class="skeleton-line skeleton-line--meta"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line skeleton-line--short"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line skeleton-line--short"></div>
+        </div>
+      </div>
+      <div class="article__nav" id="article-nav"></div>
+    </article>
+  </div>
+</main>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="返回顶部" hidden>
+  <span aria-hidden="true">↑</span>
+</button>
+
+<footer class="site-footer">
+  <div class="site-footer__top">
+    <div class="site-footer__brand">
+      <img class="site-footer__logo" src="assets/img/logo.png" alt="" width="32" height="32" aria-hidden="true" />
+      <div>
+        <p class="site-footer__title">重庆西区医院医学美容中心</p>
+        <p class="site-footer__sub">腹壁整形科普系列 · 内部资料</p>
+      </div>
+    </div>
+    <div class="site-footer__cols">
+      <div class="footer-col">
+        <p class="footer-col__title">三档内容</p>
+        <ul>
+          <li><a href="a-popular.html">大众科普</a></li>
+          <li><a href="b-training.html">业务培训</a></li>
+          <li><a href="c-review.html">专业综述</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col__title">A 档快链</p>
+        <ul>
+          <li><a href="article.html?file=A1-新生儿耳朵像花生米.md">A1 花生米</a></li>
+          <li><a href="article.html?file=A3-产后腹直肌分离.md">A3 腹直肌分离</a></li>
+          <li><a href="article.html?file=A13-术后红旗警报.md">A13 红旗警报</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col__title">配套文件</p>
+        <ul>
+          <li><a href="article.html?file=腹壁整形系列大纲.md">系列大纲</a></li>
+          <li><a href="article.html?file=B-内训手册.md">B 档内训手册</a></li>
+          <li><a href="article.html?file=三平台落地SOP.md">三平台 SOP</a></li>
+          <li><a href="article.html?file=启动期内容排期表.md">启动期排期</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer__bottom">
+    <span>2026 | 内部资料 · 仅供机构内部使用</span>
+    <span>版本 v1.3 · 内容更新截至 2026</span>
+  </div>
+</footer>
+
+<script src="assets/articles-meta.js" defer></script>
+<script src="assets/global_index.js" defer></script>
+<script src="assets/global_search.js" defer></script>
+  <script src="assets/reading_state.js" defer></script>
+<script>
+// 加载正文分片，并等元数据 + 分片都就绪后执行
+function amcLoadArticle(file, cb) {
+  var slug = amcSlug(file);
+  var tries = 0;
+  function ensure() {
+    tries++;
+    var metaReady = window.ARTICLE_META && window.ARTICLE_META[file];
+    var contentReady = window.ARTICLE_CONTENT && window.ARTICLE_CONTENT[file];
+    if (metaReady && contentReady && document.readyState !== 'loading') {
+      cb();
+    } else if (tries > 100) {
+      cb(); // 5 秒超时，仍执行（由内部处理 null）
+    } else {
+      setTimeout(ensure, 50);
+    }
+  }
+  // 若分片尚未注入，动态加载
+  if (!window.ARTICLE_CONTENT || !window.ARTICLE_CONTENT[file]) {
+    var s = document.createElement('script');
+    s.src = 'assets/slots/' + slug + '.js';
+    s.onload = function () { ensure(); };
+    s.onerror = function () { ensure(); }; // 加载失败也继续（内部显示未找到）
+    document.head.appendChild(s);
+  } else {
+    ensure();
+  }
+}
+function amcSlug(file) {
+  var m = file.match(/^([ABC])(\d+)-/);
+  if (m) return m[1] + m[2];
+  if (/^B-/.test(file)) return 'B';
+  return 'misc';
+}
+// 外层解析 file（IIFE 内再声明 var file 会覆盖，改为用解析结果）
+var _amcFile = new URLSearchParams(window.location.search).get('file');
+amcLoadArticle(_amcFile, function () {
+(function () {
+  'use strict';
+
+  var params = new URLSearchParams(window.location.search);
+  var file = params.get('file');
+  var statusEl = document.getElementById('article-status');
+  var titleEl = document.getElementById('article-title');
+  var metaEl = document.getElementById('article-meta');
+  var contentEl = document.getElementById('article-content');
+  var navEl = document.getElementById('article-nav');
+  var tocEl = document.getElementById('toc');
+  var breadcrumbEl = document.getElementById('breadcrumb');
+
+  function classify(fileName) {
+    if (/^A\d+-/.test(fileName)) return 'A';
+    if (/^B-/.test(fileName)) return 'B';
+    if (/^C\d+-/.test(fileName)) return 'C';
+    return 'X';
+  }
+
+  function backHref(c) {
+    if (c === 'A') return 'a-popular.html';
+    if (c === 'B') return 'b-training.html';
+    if (c === 'C') return 'c-review.html';
+    return 'index.html';
+  }
+
+  function backLabel(c) {
+    if (c === 'A') return '大众科普';
+    if (c === 'B') return '业务培训';
+    if (c === 'C') return '专业综述';
+    return '首页';
+  }
+
+  // 找到"主题"分组（按主题编号 A1-A20、B 内训、C1-C5）。衍生件（短问答/小红书/视频）跟随长稿。
+  function topicOf(fileName) {
+    // 长稿：A1-新生儿耳朵像花生米.md
+    var m = fileName.match(/^([ABC])(\d+)-/);
+    if (m) return m[1] + m[2];
+    // B 档内训手册
+    if (/^B-内训手册\.md$/.test(fileName)) return 'B1';
+    // 大纲 / SOP / 排期表（顶层配套）
+    return 'Z';
+  }
+
+  // 统一元数据访问器（优先轻量 meta，回退旧 ARTICLES）
+  function amcMeta() {
+    return window.ARTICLE_META || window.ARTICLES || {};
+  }
+  function amcMetaKeys() {
+    return Object.keys(window.ARTICLE_META || window.ARTICLES || {});
+  }
+
+  function topicTitle(fileName) {
+    var data = amcMeta()[fileName];
+    return data ? data.title : fileName;
+  }
+
+  // 同主题内所有文章（长稿 + 衍生件）
+  function sameTopicFiles(topic) {
+    var meta = amcMeta();
+    if (topic === 'Z') return [];
+    var files = [];
+    amcMetaKeys().forEach(function (k) {
+      if (topicOf(k) === topic) files.push(k);
+    });
+    // 排序：长稿 → 短问答 → 小红书 → 视频
+    files.sort(function (a, b) {
+      var rank = function (n) {
+        if (/-\u77ed\u95ee\u7b54\.md$/.test(n)) return 1;
+        if (/-\u5c0f\u7ea2\u4e66\u56fe\u6587\.md$/.test(n)) return 2;
+        if (/-\u77ed\u89c6\u9891\u811a\u672c\.md$/.test(n)) return 3;
+        return 0; // 长稿或顶层
+      };
+      var ra = rank(a), rb = rank(b);
+      if (ra !== rb) return ra - rb;
+      return a.localeCompare(b);
+    });
+    return files;
+  }
+
+  // 上一篇/下一篇：优先同主题内循环；主题边界外跳到下一主题的第一篇
+  function computeNav(fileName) {
+    var topic = topicOf(fileName);
+    if (topic === 'Z') {
+      // 顶层配套：按全局顺序
+      var all = amcMetaKeys();
+      var i = all.indexOf(fileName);
+      return {
+        prev: i > 0 ? { file: all[i - 1], title: topicTitle(all[i - 1]) } : null,
+        next: i < all.length - 1 ? { file: all[i + 1], title: topicTitle(all[i + 1]) } : null,
+      };
+    }
+    var files = sameTopicFiles(topic);
+    var idx = files.indexOf(fileName);
+    return {
+      prev: idx > 0 ? { file: files[idx - 1], title: topicTitle(files[idx - 1]) } : null,
+      next: idx < files.length - 1 ? { file: files[idx + 1], title: topicTitle(files[idx + 1]) } : null,
+    };
+  }
+
+  function escapeAttr(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  if (!file) {
+    titleEl.textContent = '未指定文章';
+    contentEl.innerHTML = '<p>未指定文章。返回 <a href="index.html">首页</a>。</p>';
+    if (statusEl) statusEl.remove();
+    return;
+  }
+
+  // 合并 meta（标题/导航）与 content（正文 html）
+  var meta = (window.ARTICLE_META && window.ARTICLE_META[file]) || null;
+  var content = (window.ARTICLE_CONTENT && window.ARTICLE_CONTENT[file]) || null;
+  var data = null;
+  if (meta && content) {
+    data = { file: file };
+    data.title = meta.title;
+    data.cat = meta.cat;
+    data.back = meta.back;
+    data.prev = meta.prev;
+    data.next = meta.next;
+    data.html = content.html;
+  } else if (window.ARTICLES && window.ARTICLES[file]) {
+    // 兜底：旧结构
+    data = window.ARTICLES[file];
+  }
+
+  if (!data) {
+    titleEl.textContent = '未找到文章';
+    var p1 = document.createElement('p');
+    p1.textContent = '文件 "' + file + '" 不在索引中。';
+    contentEl.innerHTML = '';
+    contentEl.appendChild(p1);
+
+    // 相似文件推荐（前缀匹配 + 字符重叠）
+    var allKeys = amcMetaKeys();
+    var query = file.toLowerCase().replace(/\.md$/, '');
+    var scored = allKeys.map(function (k) {
+      var kl = k.toLowerCase().replace(/\.md$/, '');
+      var score = 0;
+      var qPrefix = kl.split(/[-\d]/)[0];
+      var kPrefix = query.split(/[-\d]/)[0];
+      if (qPrefix && qPrefix === kPrefix) score += 5;
+      var qi = query.indexOf(kl.slice(0, 5));
+      if (qi >= 0) score += 3;
+      // 字符重叠
+      var common = 0;
+      for (var ci = 0; ci < Math.min(query.length, kl.length); ci++) {
+        if (query[ci] === kl[ci]) common++;
+        else break;
+      }
+      score += common;
+      return { k: k, score: score };
+    }).filter(function (x) { return x.score > 0; })
+      .sort(function (a, b) { return b.score - a.score; })
+      .slice(0, 5);
+
+    if (scored.length > 0) {
+      var h = document.createElement('h2');
+      h.textContent = '您可能在找';
+      contentEl.appendChild(h);
+      var ul = document.createElement('ul');
+      ul.className = 'list';
+      scored.forEach(function (s) {
+        var li = document.createElement('li');
+        li.className = 'list__item';
+        var body = document.createElement('div');
+        body.className = 'list__body';
+        var tt = document.createElement('div');
+        tt.className = 'list__title';
+        var a = document.createElement('a');
+        a.href = 'article.html?file=' + encodeURIComponent(s.k);
+        a.textContent = (amcMeta()[s.k] && amcMeta()[s.k].title) || s.k;
+        tt.appendChild(a);
+        body.appendChild(tt);
+        var meta = document.createElement('p');
+        meta.className = 'list__meta';
+        meta.textContent = s.k;
+        body.appendChild(meta);
+        li.appendChild(body);
+        ul.appendChild(li);
+      });
+      contentEl.appendChild(ul);
+    }
+
+    var backP = document.createElement('p');
+    backP.appendChild(document.createTextNode('返回 '));
+    var backA = document.createElement('a');
+    backA.href = 'index.html';
+    backA.textContent = '首页';
+    backP.appendChild(backA);
+    contentEl.appendChild(backP);
+
+    document.title = '未找到文章 · 腹壁整形科普系列';
+    if (statusEl) statusEl.remove();
+    return;
+  }
+
+  document.title = data.title + ' · 腹壁整形科普系列';
+  titleEl.textContent = data.title;
+
+  // 同步更新分享用 og 标签（微信抓取 & JS-SDK 增强）
+  (function () {
+    function setOG(prop, val) {
+      var el = document.querySelector('meta[property="' + prop + '"]');
+      if (el && val) el.setAttribute('content', val);
+    }
+    setOG('og:title', data.title + ' · 腹壁整形科普系列');
+    var descEl = document.querySelector('meta[property="og:description"]');
+    if (descEl) descEl.setAttribute('content', (data.title || '') + ' · 腹壁整形科普系列');
+    setOG('og:image', 'https://tummytuck.amcd.westhospital.net/assets/img/share-card.png');
+    setOG('og:url', window.location.href.split('#')[0]);
+    // 通知微信分享脚本读取最新 og 值（若已初始化）
+    if (window.AMCWechatShare) window.AMCWechatShare.refresh();
+  })();
+
+  var c = classify(file);
+  var topic = topicOf(file);
+  metaEl.textContent =
+    '分类：' + backLabel(c) +
+    (topic !== 'Z' ? ' · 主题编号：' + topic : '') +
+    ' · 来源：' + file;
+
+  // 面包屑
+  if (breadcrumbEl) {
+    var bc = document.createElement('ol');
+    bc.className = 'breadcrumb__list';
+    var li1 = document.createElement('li');
+    var a1 = document.createElement('a');
+    a1.href = 'index.html';
+    a1.textContent = '首页';
+    li1.appendChild(a1);
+    bc.appendChild(li1);
+    var li2 = document.createElement('li');
+    var a2 = document.createElement('a');
+    a2.href = backHref(c);
+    a2.textContent = backLabel(c);
+    li2.appendChild(a2);
+    bc.appendChild(li2);
+    var li3 = document.createElement('li');
+    li3.textContent = data.title;
+    li3.setAttribute('aria-current', 'page');
+    bc.appendChild(li3);
+    breadcrumbEl.appendChild(bc);
+  }
+
+  contentEl.innerHTML = data.html;
+  if (statusEl) statusEl.remove();
+
+  // 阅读时长估算（中文 350 字/分钟，最少 1 分钟）
+  var text = contentEl.textContent || '';
+  var wordCount = text.replace(/\s+/g, '').length;
+  var minutes = Math.max(1, Math.round(wordCount / 350));
+  if (metaEl) {
+    var readTag = document.createElement('span');
+    readTag.className = 'article__read-time';
+    readTag.textContent = '约 ' + minutes + ' 分钟阅读 · ' + wordCount + ' 字';
+    metaEl.appendChild(document.createTextNode(' · '));
+    metaEl.appendChild(readTag);
+  }
+
+  // 阅读进度条
+  var progressEl = document.getElementById('reading-progress');
+  function updateProgress() {
+    if (!progressEl) return;
+    var rect = contentEl.getBoundingClientRect();
+    var total = contentEl.scrollHeight - window.innerHeight;
+    var scrolled = Math.min(Math.max(-rect.top, 0), Math.max(total, 1));
+    var pct = total > 0 ? (scrolled / total) * 100 : 0;
+    progressEl.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
+  // 高亮搜索关键词并定位（来自 ?q= 参数）
+  var qParam = params.get('q');
+  if (qParam && contentEl) {
+    var qTrim = qParam.trim();
+    if (qTrim) {
+      var qEscaped = qTrim.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      // 在文本节点中找首个匹配（不跨节点匹配）
+      var walker = document.createTreeWalker(contentEl, NodeFilter.SHOW_TEXT, null, false);
+      var firstNode = null;
+      var node;
+      while ((node = walker.nextNode())) {
+        if (node.nodeValue && node.nodeValue.indexOf(qTrim) >= 0) { firstNode = node; break; }
+      }
+      if (firstNode) {
+        var idx = firstNode.nodeValue.indexOf(qTrim);
+        var range = document.createRange();
+        range.setStart(firstNode, idx);
+        range.setEnd(firstNode, idx + qTrim.length);
+        var mark = document.createElement('mark');
+        mark.className = 'article__hit';
+        range.surroundContents(mark);
+        // 滚动到匹配位置（顶栏高度 60 + 进度条 3 = 63）
+        setTimeout(function () {
+          var rect = mark.getBoundingClientRect();
+          var top = window.scrollY + rect.top - 80;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }, 60);
+        // 2.4 秒后淡出
+        setTimeout(function () { mark.classList.add('is-fading'); }, 2400);
+        setTimeout(function () {
+          if (mark.parentNode) {
+            var parent = mark.parentNode;
+            while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
+            parent.removeChild(mark);
+            parent.normalize();
+          }
+        }, 3200);
+      }
+    }
+  }
+
+  // 返回顶部按钮
+  var backBtn = document.getElementById('back-to-top');
+  if (backBtn) {
+    backBtn.hidden = false;
+    var toggleBack = function () {
+      if (window.scrollY > 400) backBtn.classList.add('is-visible');
+      else backBtn.classList.remove('is-visible');
+    };
+    window.addEventListener('scroll', toggleBack, { passive: true });
+    backBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    toggleBack();
+  }
+
+  // 构建 TOC + 滚动同步
+  function buildToc() {
+    if (!tocEl) return;
+    var headings = contentEl.querySelectorAll('h2, h3');
+    if (headings.length < 2) {
+      tocEl.innerHTML = '';
+      var aside = document.getElementById('article-aside');
+      if (aside) aside.hidden = true;
+      return;
+    }
+    var list = document.createElement('ol');
+    list.className = 'toc__list';
+    var linkMap = [];
+    headings.forEach(function (h, i) {
+      if (!h.id) h.id = 'h-' + i;
+      var li = document.createElement('li');
+      li.className = 'toc__item toc__item--' + h.tagName.toLowerCase();
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent;
+      a.className = 'toc__link';
+      li.appendChild(a);
+      list.appendChild(li);
+      linkMap.push({ id: h.id, link: a });
+    });
+    tocEl.appendChild(list);
+
+    // 滚动同步当前章节
+    if ('IntersectionObserver' in window && linkMap.length > 0) {
+      var visibility = {};
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { visibility[e.target.id] = e.intersectionRatio; });
+        // 选择当前可见度最高的标题
+        var best = null, bestRatio = 0;
+        for (var id in visibility) {
+          if (visibility[id] > bestRatio) { bestRatio = visibility[id]; best = id; }
+        }
+        linkMap.forEach(function (l) {
+          if (l.id === best && bestRatio > 0) l.link.classList.add('toc__link--active');
+          else l.link.classList.remove('toc__link--active');
+        });
+      }, { rootMargin: '-20% 0px -60% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] });
+      headings.forEach(function (h) { observer.observe(h); });
+    }
+  }
+  buildToc();
+
+  // 上一篇 / 下一篇（按主题分组内）
+  var nav = computeNav(file);
+  if (nav.prev) {
+    var p = document.createElement('a');
+    p.className = 'btn article__nav-btn article__nav-btn--prev';
+    p.href = 'article.html?file=' + encodeURIComponent(nav.prev.file);
+    p.innerHTML = '<span class="article__nav-arrow" aria-hidden="true">←</span>' +
+                   '<span class="article__nav-label">上一篇</span>' +
+                   '<span class="article__nav-title">' + escapeAttr(nav.prev.title) + '</span>';
+    p.setAttribute('aria-label', '上一篇：' + nav.prev.title);
+    navEl.appendChild(p);
+  }
+  var back = document.createElement('a');
+  back.className = 'btn article__nav-btn--back';
+  back.href = backHref(c);
+  back.innerHTML = '<span class="article__nav-label">返回</span><span class="article__nav-back-target">' + backLabel(c) + '</span>';
+  navEl.appendChild(back);
+  if (nav.next) {
+    var n = document.createElement('a');
+    n.className = 'btn article__nav-btn article__nav-btn--next';
+    n.href = 'article.html?file=' + encodeURIComponent(nav.next.file);
+    n.innerHTML = '<span class="article__nav-label">下一篇</span>' +
+                   '<span class="article__nav-title">' + escapeAttr(nav.next.title) + '</span>' +
+                   '<span class="article__nav-arrow" aria-hidden="true">→</span>';
+    n.setAttribute('aria-label', '下一篇：' + nav.next.title);
+    navEl.appendChild(n);
+  }
+
+  // 复制链接
+  var copyBtn = document.getElementById('copy-link-btn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      var url = window.location.href;
+      var done = function () {
+        copyBtn.textContent = '已复制';
+        setTimeout(function () { copyBtn.innerHTML = '<span aria-hidden="true">连接</span> 复制链接'; }, 1500);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done).catch(function () {
+          promptFallback(url); done();
+        });
+      } else {
+        promptFallback(url); done();
+      }
+      function promptFallback(u) {
+        var t = document.createElement('textarea');
+        t.value = u;
+        t.style.position = 'fixed';
+        t.style.opacity = '0';
+        document.body.appendChild(t);
+        t.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(t);
+      }
+    });
+  }
+
+  // 打印
+  var printBtn = document.getElementById('print-btn');
+  if (printBtn) {
+    printBtn.addEventListener('click', function () { window.print(); });
+  }
+})();
+});
+</script>
+
+</body>
+</html>
