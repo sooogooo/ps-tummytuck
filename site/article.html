@@ -113,7 +113,7 @@
       <div class="footer-col">
         <p class="footer-col__title">A 档快链</p>
         <ul>
-          <li><a href="article.html?file=A1-新生儿耳朵像花生米.md">A1 花生米</a></li>
+          <li><a href="article.html?file=A1-肚子里是脂肪还是皮肤.md">A1 分清脂肪与皮肤</a></li>
           <li><a href="article.html?file=A3-产后腹直肌分离.md">A3 腹直肌分离</a></li>
           <li><a href="article.html?file=A13-术后红旗警报.md">A13 红旗警报</a></li>
         </ul>
@@ -212,7 +212,7 @@ amcLoadArticle(_amcFile, function () {
 
   // 找到"主题"分组（按主题编号 A1-A20、B 内训、C1-C5）。衍生件（短问答/小红书/视频）跟随长稿。
   function topicOf(fileName) {
-    // 长稿：A1-新生儿耳朵像花生米.md
+    // 长稿：A1-肚子里是脂肪还是皮肤.md
     var m = fileName.match(/^([ABC])(\d+)-/);
     if (m) return m[1] + m[2];
     // B 档内训手册
